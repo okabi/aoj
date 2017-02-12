@@ -9,7 +9,7 @@ else
     filename=$1
 fi
 
-g++ -static-libstdc++ -o $exename $filename
+g++ -static-libstdc++ -std=c++11 -o $exename $filename
 if [ $? -eq 0 ]; then
     ./$exename
 fi
